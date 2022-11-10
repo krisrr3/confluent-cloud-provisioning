@@ -1,1 +1,24 @@
 This is confluent cloud provisioning demo
+
+# Steps to run for cluster provisioning
+
+1. Initiatilize Terraform
+
+	terraform init --upgrade
+	
+This command will refer to main.tf for the appropriate variables to use, such as versions, before initialising the Terraform client.
+
+2. Gather Cloud API Key and Cloud API Key Secret.
+
+3. Use the key and secret to provision the cluster with the command below
+
+	terraform apply -var="confluent_cloud_api_key=PUT_YOUR_CLOUD_API_KEY_HERE" -var="confluent_cloud_api_secret=PUT_YOUR_CLOUD_API_SECRET"
+	
+4. Destroy Cluster
+
+	terraform destroy -var="confluent_cloud_api_key=PUT_YOUR_CLOUD_API_KEY_HERE" -var="confluent_cloud_api_secret=PUT_YOUR_CLOUD_API_SECRET"
+	
+	
+# References
+- Confluent Terraform Documentation : https://registry.terraform.io/providers/confluentinc/confluent/latest/docs
+
