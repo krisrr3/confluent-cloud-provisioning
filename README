@@ -22,3 +22,5 @@ This command will refer to main.tf for the appropriate variables to use, such as
 # References
 - Confluent Terraform Documentation : https://registry.terraform.io/providers/confluentinc/confluent/latest/docs
 
+- Encryption at rest : https://docs.confluent.io/cloud/current/clusters/byok/byok-aws.html#using-the-confluent-cli-to-encrypt-clusters-using-your-own-key
+
